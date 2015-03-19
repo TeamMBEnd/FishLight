@@ -1,0 +1,368 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{76A39BB2-9B84-4C65-98A5-654D86B86F2A}</ProjectGuid>
+    <RootNamespace>test_win32</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '10.0'">v100</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0'">v110</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v110_xp</PlatformToolset>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '10.0'">v100</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0'">v110</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v110_xp</PlatformToolset>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\cocos2d\cocos\2d\cocos2dx.props" />
+    <Import Project="..\cocos2d\cocos\2d\cocos2d_headers.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\cocos2d\cocos\2d\cocos2dx.props" />
+    <Import Project="..\cocos2d\cocos\2d\cocos2d_headers.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration).win32\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration).win32\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LibraryPath>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\adx2\include\pc;..\adx2\pc\include;$(EngineRoot)cocos\audio\include;$(EngineRoot)external;$(EngineRoot)external\chipmunk\include\chipmunk;$(EngineRoot)extensions;..\Classes;..;$(EngineRoot);$(EngineRoot)cocos;$(EngineRoot)cocos\base;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USE_MATH_DEFINES;GL_GLEXT_PROTOTYPES;CC_ENABLE_CHIPMUNK_INTEGRATION=1;COCOS2D_DEBUG=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <ForcedIncludeFiles>%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>cri_ware_pcx86_LE_import.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(OutDir);..\adx2\pc\libs\x86;..\adx2\libs\pc\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PreLinkEvent>
+      <Command>if not exist "$(OutDir)" mkdir "$(OutDir)"
+xcopy /Y /Q "$(EngineRoot)external\websockets\prebuilt\win32\*.*" "$(OutDir)"</Command>
+    </PreLinkEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(EngineRoot)cocos\audio\include;$(EngineRoot)external;$(EngineRoot)external\chipmunk\include\chipmunk;$(EngineRoot)extensions;..\Classes;..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USE_MATH_DEFINES;GL_GLEXT_PROTOTYPES;CC_ENABLE_CHIPMUNK_INTEGRATION=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libcurl_imp.lib;websockets.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PreLinkEvent>
+      <Command>if not exist "$(OutDir)" mkdir "$(OutDir)"
+xcopy /Y /Q "$(EngineRoot)external\websockets\prebuilt\win32\*.*" "$(OutDir)"</Command>
+    </PreLinkEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Classes\AppDelegate.cpp" />
+    <ClCompile Include="..\Classes\Game\Draw\BackGround.cpp" />
+    <ClCompile Include="..\Classes\Game\Draw\DarknessMask.cpp" />
+    <ClCompile Include="..\Classes\Game\Draw\Draw2D.cpp" />
+    <ClCompile Include="..\Classes\Game\Draw\Effect\Blend\AlphaBlend.cpp" />
+    <ClCompile Include="..\Classes\Game\Draw\Effect\Light\BlendLight.cpp" />
+    <ClCompile Include="..\Classes\Game\Draw\Effect\Light\LightManager.cpp" />
+    <ClCompile Include="..\Classes\Game\Draw\Effect\Light\SpotLight.cpp" />
+    <ClCompile Include="..\Classes\Game\Draw\Effect\Particle\SimpleParticle.cpp" />
+    <ClCompile Include="..\Classes\Game\Draw\Effect\Ripple\Base\Ripple.cpp" />
+    <ClCompile Include="..\Classes\Game\Draw\Effect\Ripple\Base\RippleBody.cpp" />
+    <ClCompile Include="..\Classes\Game\Draw\Effect\Ripple\Support\RippleCounter.cpp" />
+    <ClCompile Include="..\Classes\Game\Draw\Effect\Ripple\Support\RippleFactory.cpp" />
+    <ClCompile Include="..\Classes\Game\Draw\Effect\Ripple\Support\RippleManager.cpp" />
+    <ClCompile Include="..\Classes\Game\Draw\Effect\Wave\Wave.cpp" />
+    <ClCompile Include="..\Classes\Game\Draw\Effect\Wave\WaveManager.cpp" />
+    <ClCompile Include="..\Classes\Game\Object\Character\Enemy\Enemy.cpp" />
+    <ClCompile Include="..\Classes\Game\Object\Character\Enemy\EnemyAttack.cpp" />
+    <ClCompile Include="..\Classes\Game\Object\Character\Enemy\EnemyEscape.cpp" />
+    <ClCompile Include="..\Classes\Game\Object\Character\Enemy\EnemyFactory.cpp" />
+    <ClCompile Include="..\Classes\Game\Object\Character\Enemy\EnemyJellyFish.cpp" />
+    <ClCompile Include="..\Classes\Game\Object\Character\Enemy\EnemyLurk.cpp" />
+    <ClCompile Include="..\Classes\Game\Object\Character\Enemy\EnemyManager.cpp" />
+    <ClCompile Include="..\Classes\Game\Object\Character\Enemy\EnemyMove.cpp" />
+    <ClCompile Include="..\Classes\Game\Object\Character\Enemy\EnemyReaper.cpp" />
+    <ClCompile Include="..\Classes\Game\Object\Character\Enemy\EnemyRebellion.cpp" />
+    <ClCompile Include="..\Classes\Game\Object\Character\Enemy\EnemyRippleFish.cpp" />
+    <ClCompile Include="..\Classes\Game\Object\Character\Player\Player.cpp" />
+    <ClCompile Include="..\Classes\Game\Object\Character\Player\PlayerSprite.cpp" />
+    <ClCompile Include="..\Classes\Game\Object\Character\SeaFireFly\AggressiveSeaFireFly.cpp" />
+    <ClCompile Include="..\Classes\Game\Object\Character\SeaFireFly\EscapeState.cpp" />
+    <ClCompile Include="..\Classes\Game\Object\Character\SeaFireFly\FollowPositionManager.cpp" />
+    <ClCompile Include="..\Classes\Game\Object\Character\SeaFireFly\FollowState.cpp" />
+    <ClCompile Include="..\Classes\Game\Object\Character\SeaFireFly\FreeState.cpp" />
+    <ClCompile Include="..\Classes\Game\Object\Character\SeaFireFly\NearMove.cpp" />
+    <ClCompile Include="..\Classes\Game\Object\Character\SeaFireFly\SeaFireFly.cpp" />
+    <ClCompile Include="..\Classes\Game\Object\Character\SeaFireFly\SeaFireFlyManager.cpp" />
+    <ClCompile Include="..\Classes\Game\Object\Character\SeaFireFly\SeaFireFlyMove.cpp" />
+    <ClCompile Include="..\Classes\Game\Object\Character\SeaFireFly\SnapState.cpp" />
+    <ClCompile Include="..\Classes\Game\Object\Stage\Alga.cpp" />
+    <ClCompile Include="..\Classes\Game\Object\Stage\BigStone.cpp" />
+    <ClCompile Include="..\Classes\Game\Object\Stage\Goal.cpp" />
+    <ClCompile Include="..\Classes\Game\Object\Stage\SmallStone.cpp" />
+    <ClCompile Include="..\Classes\Game\Object\Stage\StageSeaFly.cpp" />
+    <ClCompile Include="..\Classes\Game\Object\Stage\Stone.cpp" />
+    <ClCompile Include="..\Classes\Game\Object\Stage\Whirlpool.cpp" />
+    <ClCompile Include="..\Classes\Game\Scene\Direction\DirectionScene.cpp" />
+    <ClCompile Include="..\Classes\Game\Scene\Main\MainLayer.cpp" />
+    <ClCompile Include="..\Classes\Game\Scene\Main\MainState.cpp" />
+    <ClCompile Include="..\Classes\Game\Scene\Main\Tutorial.cpp" />
+    <ClCompile Include="..\Classes\Game\Scene\Main\TutorialAnimation.cpp" />
+    <ClCompile Include="..\Classes\Game\Scene\Result\Animation\ResultScoreAnimation.cpp" />
+    <ClCompile Include="..\Classes\Game\Scene\Result\Animation\ResultStarAnimation.cpp" />
+    <ClCompile Include="..\Classes\Game\Scene\Result\Layer\ResultLayer.cpp" />
+    <ClCompile Include="..\Classes\Game\Scene\Result\Support\ResultManager.cpp" />
+    <ClCompile Include="..\Classes\Game\Scene\StageSelect\StageCreater.cpp" />
+    <ClCompile Include="..\Classes\Game\Scene\StageSelect\StageDataReader.cpp" />
+    <ClCompile Include="..\Classes\Game\Scene\StageSelect\StageFactory.cpp" />
+    <ClCompile Include="..\Classes\Game\Scene\StageSelect\StageManager.cpp" />
+    <ClCompile Include="..\Classes\Game\Scene\StageSelect\StageObjManager.cpp" />
+    <ClCompile Include="..\Classes\Game\Scene\StageSelect\StageSelectScene.cpp" />
+    <ClCompile Include="..\Classes\Game\Scene\Sub\IScene.cpp" />
+    <ClCompile Include="..\Classes\Game\Scene\Sub\PauseLayer.cpp" />
+    <ClCompile Include="..\Classes\Game\Scene\Title\TitleScene.cpp" />
+    <ClCompile Include="..\Classes\Game\Sound\BGM\BaseBGM.cpp" />
+    <ClCompile Include="..\Classes\Game\Sound\BGM\BGMManager.cpp" />
+    <ClCompile Include="..\Classes\Game\Sound\RappingAudio.cpp" />
+    <ClCompile Include="..\Classes\Game\Sound\SE\BaseSE.cpp" />
+    <ClCompile Include="..\Classes\Game\Sound\SE\SEManager.cpp" />
+    <ClCompile Include="..\Classes\Game\Util\Animation\SpriteAnimation.cpp" />
+    <ClCompile Include="..\Classes\Game\Util\Collision\CollisionFuncManager.cpp" />
+    <ClCompile Include="..\Classes\Game\Util\Collision\CollisionListener.cpp" />
+    <ClCompile Include="..\Classes\Game\Util\DeterminedStage.cpp" />
+    <ClCompile Include="..\Classes\Game\Util\FileIO\CSVReader.cpp" />
+    <ClCompile Include="..\Classes\Game\Util\FileIO\FileReader.cpp" />
+    <ClCompile Include="..\Classes\Game\Util\FileIO\FileWriter.cpp" />
+    <ClCompile Include="..\Classes\Game\Util\FileIO\PlistReader.cpp" />
+    <ClCompile Include="..\Classes\Game\Util\Scene\Fade.cpp" />
+    <ClCompile Include="..\Classes\Game\Util\Sound\ADX2Converter.cpp" />
+    <ClCompile Include="..\Classes\Game\Util\Sound\ADX2CueSheet.cpp" />
+    <ClCompile Include="..\Classes\Game\Util\Sound\ADX2Manager.cpp" />
+    <ClCompile Include="..\Classes\Game\Util\Sound\ADX2Player.cpp" />
+    <ClCompile Include="..\Classes\Game\Util\Sound\ADX2Sound.cpp" />
+    <ClCompile Include="..\Classes\System\Camera.cpp" />
+    <ClCompile Include="..\Classes\System\System.cpp" />
+    <ClCompile Include="..\Classes\System\Timer.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Classes\AppDelegate.h" />
+    <ClInclude Include="..\Classes\Game\Draw\BackGround.h" />
+    <ClInclude Include="..\Classes\Game\Draw\DarknessMask.h" />
+    <ClInclude Include="..\Classes\Game\Draw\Draw2D.h" />
+    <ClInclude Include="..\Classes\Game\Draw\Effect\Blend\AlphaBlend.h" />
+    <ClInclude Include="..\Classes\Game\Draw\Effect\Light\BlendLight.h" />
+    <ClInclude Include="..\Classes\Game\Draw\Effect\Light\BlendLightState.h" />
+    <ClInclude Include="..\Classes\Game\Draw\Effect\Light\LightManager.h" />
+    <ClInclude Include="..\Classes\Game\Draw\Effect\Light\SpotLight.h" />
+    <ClInclude Include="..\Classes\Game\Draw\Effect\Particle\SimpleParticle.h" />
+    <ClInclude Include="..\Classes\Game\Draw\Effect\Ripple\Base\Ripple.h" />
+    <ClInclude Include="..\Classes\Game\Draw\Effect\Ripple\Base\RippleBody.h" />
+    <ClInclude Include="..\Classes\Game\Draw\Effect\Ripple\Support\RippleCounter.h" />
+    <ClInclude Include="..\Classes\Game\Draw\Effect\Ripple\Support\RippleFactory.h" />
+    <ClInclude Include="..\Classes\Game\Draw\Effect\Ripple\Support\RippleManager.h" />
+    <ClInclude Include="..\Classes\Game\Draw\Effect\Ripple\Support\RippleParameter.h" />
+    <ClInclude Include="..\Classes\Game\Draw\Effect\Ripple\Support\RippleTag.h" />
+    <ClInclude Include="..\Classes\Game\Draw\Effect\Ripple\Util\RippleRelease.h" />
+    <ClInclude Include="..\Classes\Game\Draw\Effect\Wave\Wave.h" />
+    <ClInclude Include="..\Classes\Game\Draw\Effect\Wave\WaveManager.h" />
+    <ClInclude Include="..\Classes\Game\Object\Character\Enemy\Enemy.h" />
+    <ClInclude Include="..\Classes\Game\Object\Character\Enemy\EnemyAttack.h" />
+    <ClInclude Include="..\Classes\Game\Object\Character\Enemy\EnemyEscape.h" />
+    <ClInclude Include="..\Classes\Game\Object\Character\Enemy\EnemyFactory.h" />
+    <ClInclude Include="..\Classes\Game\Object\Character\Enemy\EnemyJellyFish.h" />
+    <ClInclude Include="..\Classes\Game\Object\Character\Enemy\EnemyLurk.h" />
+    <ClInclude Include="..\Classes\Game\Object\Character\Enemy\EnemyManager.h" />
+    <ClInclude Include="..\Classes\Game\Object\Character\Enemy\EnemyMove.h" />
+    <ClInclude Include="..\Classes\Game\Object\Character\Enemy\EnemyReaper.h" />
+    <ClInclude Include="..\Classes\Game\Object\Character\Enemy\EnemyRebellion.h" />
+    <ClInclude Include="..\Classes\Game\Object\Character\Enemy\EnemyRemove.h" />
+    <ClInclude Include="..\Classes\Game\Object\Character\Enemy\EnemyRippleFish.h" />
+    <ClInclude Include="..\Classes\Game\Object\Character\Enemy\EnemyState.h" />
+    <ClInclude Include="..\Classes\Game\Object\Character\Enemy\IEnemyMove.h" />
+    <ClInclude Include="..\Classes\Game\Object\Character\Player\Player.h" />
+    <ClInclude Include="..\Classes\Game\Object\Character\Player\PlayerSprite.h" />
+    <ClInclude Include="..\Classes\Game\Object\Character\SeaFireFly\AggressiveSeaFireFly.h" />
+    <ClInclude Include="..\Classes\Game\Object\Character\SeaFireFly\EscapeState.h" />
+    <ClInclude Include="..\Classes\Game\Object\Character\SeaFireFly\FollowPositionManager.h" />
+    <ClInclude Include="..\Classes\Game\Object\Character\SeaFireFly\FollowState.h" />
+    <ClInclude Include="..\Classes\Game\Object\Character\SeaFireFly\FreeState.h" />
+    <ClInclude Include="..\Classes\Game\Object\Character\SeaFireFly\ISeaFireFlyMove.h" />
+    <ClInclude Include="..\Classes\Game\Object\Character\SeaFireFly\ISeaFireFlyState.h" />
+    <ClInclude Include="..\Classes\Game\Object\Character\SeaFireFly\NearMove.h" />
+    <ClInclude Include="..\Classes\Game\Object\Character\SeaFireFly\SeaFireFly.h" />
+    <ClInclude Include="..\Classes\Game\Object\Character\SeaFireFly\SeaFireFlyBase.h" />
+    <ClInclude Include="..\Classes\Game\Object\Character\SeaFireFly\SeaFireFlyManager.h" />
+    <ClInclude Include="..\Classes\Game\Object\Character\SeaFireFly\SeaFireFlyMove.h" />
+    <ClInclude Include="..\Classes\Game\Object\Character\SeaFireFly\SeaFireFlyRemove.h" />
+    <ClInclude Include="..\Classes\Game\Object\Character\SeaFireFly\SeaFireFlyRemoveAll.h" />
+    <ClInclude Include="..\Classes\Game\Object\Character\SeaFireFly\SeaFireFlyState.h" />
+    <ClInclude Include="..\Classes\Game\Object\Character\SeaFireFly\SnapState.h" />
+    <ClInclude Include="..\Classes\Game\Object\Stage\Alga.h" />
+    <ClInclude Include="..\Classes\Game\Object\Stage\BigStone.h" />
+    <ClInclude Include="..\Classes\Game\Object\Stage\Goal.h" />
+    <ClInclude Include="..\Classes\Game\Object\Stage\ObjRemove.h" />
+    <ClInclude Include="..\Classes\Game\Object\Stage\SmallStone.h" />
+    <ClInclude Include="..\Classes\Game\Object\Stage\StageObj.h" />
+    <ClInclude Include="..\Classes\Game\Object\Stage\StageSeaFly.h" />
+    <ClInclude Include="..\Classes\Game\Object\Stage\Stone.h" />
+    <ClInclude Include="..\Classes\Game\Object\Stage\Whirlpool.h" />
+    <ClInclude Include="..\Classes\Game\Scene\Direction\DirectionScene.h" />
+    <ClInclude Include="..\Classes\Game\Scene\Main\MainLayer.h" />
+    <ClInclude Include="..\Classes\Game\Scene\Main\MainState.h" />
+    <ClInclude Include="..\Classes\Game\Scene\Main\Tutorial.h" />
+    <ClInclude Include="..\Classes\Game\Scene\Main\TutorialAnimation.h" />
+    <ClInclude Include="..\Classes\Game\Scene\Result\Animation\IResultAnimation.h" />
+    <ClInclude Include="..\Classes\Game\Scene\Result\Animation\ResultScoreAnimation.h" />
+    <ClInclude Include="..\Classes\Game\Scene\Result\Animation\ResultStarAnimation.h" />
+    <ClInclude Include="..\Classes\Game\Scene\Result\Layer\ResultLayer.h" />
+    <ClInclude Include="..\Classes\Game\Scene\Result\Support\ResultData.h" />
+    <ClInclude Include="..\Classes\Game\Scene\Result\Support\ResultManager.h" />
+    <ClInclude Include="..\Classes\Game\Scene\StageSelect\StageCreater.h" />
+    <ClInclude Include="..\Classes\Game\Scene\StageSelect\StageDataReader.h" />
+    <ClInclude Include="..\Classes\Game\Scene\StageSelect\StageFactory.h" />
+    <ClInclude Include="..\Classes\Game\Scene\StageSelect\StageManager.h" />
+    <ClInclude Include="..\Classes\Game\Scene\StageSelect\StageObjManager.h" />
+    <ClInclude Include="..\Classes\Game\Scene\StageSelect\StageSelectScene.h" />
+    <ClInclude Include="..\Classes\Game\Scene\Sub\IScene.h" />
+    <ClInclude Include="..\Classes\Game\Scene\Sub\PauseLayer.h" />
+    <ClInclude Include="..\Classes\Game\Scene\Title\TitleScene.h" />
+    <ClInclude Include="..\Classes\Game\Sound\BGM\BaseBGM.h" />
+    <ClInclude Include="..\Classes\Game\Sound\BGM\BGMManager.h" />
+    <ClInclude Include="..\Classes\Game\Sound\BGM\BGMTag.h" />
+    <ClInclude Include="..\Classes\Game\Sound\RappingAudio.h" />
+    <ClInclude Include="..\Classes\Game\Sound\SE\BaseSE.h" />
+    <ClInclude Include="..\Classes\Game\Sound\SE\SEManager.h" />
+    <ClInclude Include="..\Classes\Game\Sound\SE\SETag.h" />
+    <ClInclude Include="..\Classes\Game\Util\Animation\SpriteAnimation.h" />
+    <ClInclude Include="..\Classes\Game\Util\Collision\CollisionDelegate.h" />
+    <ClInclude Include="..\Classes\Game\Util\Collision\CollisionFuncManager.h" />
+    <ClInclude Include="..\Classes\Game\Util\Collision\CollisionListener.h" />
+    <ClInclude Include="..\Classes\Game\Util\Collision\ICollider.h" />
+    <ClInclude Include="..\Classes\Game\Util\Collision\ICollisionDelegate.h" />
+    <ClInclude Include="..\Classes\Game\Util\Creater\ManagerTemplate.h" />
+    <ClInclude Include="..\Classes\Game\Util\DeterminedStage.h" />
+    <ClInclude Include="..\Classes\Game\Util\FileIO\CSVReader.h" />
+    <ClInclude Include="..\Classes\Game\Util\FileIO\FileReader.h" />
+    <ClInclude Include="..\Classes\Game\Util\FileIO\FileWriter.h" />
+    <ClInclude Include="..\Classes\Game\Util\FileIO\PlistReader.h" />
+    <ClInclude Include="..\Classes\Game\Util\FileIO\ReadData.h" />
+    <ClInclude Include="..\Classes\Game\Util\Release\DeleteContainer.h" />
+    <ClInclude Include="..\Classes\Game\Util\Release\DeleteInstance.h" />
+    <ClInclude Include="..\Classes\Game\Util\Release\ReleaseContainer.h" />
+    <ClInclude Include="..\Classes\Game\Util\Release\ReleaseInstance.h" />
+    <ClInclude Include="..\Classes\Game\Util\Scene\Fade.h" />
+    <ClInclude Include="..\Classes\Game\Util\Sound\ADX2Converter.h" />
+    <ClInclude Include="..\Classes\Game\Util\Sound\ADX2CueSheet.h" />
+    <ClInclude Include="..\Classes\Game\Util\Sound\ADX2Manager.h" />
+    <ClInclude Include="..\Classes\Game\Util\Sound\ADX2Player.h" />
+    <ClInclude Include="..\Classes\Game\Util\Sound\ADX2PlayerTag.h" />
+    <ClInclude Include="..\Classes\Game\Util\Sound\ADX2Sound.h" />
+    <ClInclude Include="..\Classes\System\Camera.h" />
+    <ClInclude Include="..\Classes\System\memory.h" />
+    <ClInclude Include="..\Classes\System\MyMath.h" />
+    <ClInclude Include="..\Classes\System\System.h" />
+    <ClInclude Include="..\Classes\System\Timer.h" />
+    <ClInclude Include="main.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\cocos2d\cocos\2d\cocos2d.vcxproj">
+      <Project>{98a51ba8-fc3a-415b-ac8f-8c7bd464e93e}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\cocos2d\cocos\audio\proj.win32\CocosDenshion.vcxproj">
+      <Project>{f8edd7fa-9a51-4e80-baeb-860825d2eac6}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\cocos2d\extensions\proj.win32\libExtensions.vcxproj">
+      <Project>{21b2c324-891f-48ea-ad1a-5ae13de12e28}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\cocos2d\external\chipmunk\proj.win32\chipmunk.vcxproj">
+      <Project>{207bc7a9-ccf1-4f2f-a04d-45f72242ae25}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="game.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

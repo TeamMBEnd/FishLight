@@ -1,0 +1,782 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="..\Classes\System\Camera.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\System\System.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\System\Timer.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Object\Character\Enemy\Enemy.cpp">
+      <Filter>Game\Chara\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Object\Character\Enemy\EnemyAttack.cpp">
+      <Filter>Game\Chara\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Object\Character\Enemy\EnemyEscape.cpp">
+      <Filter>Game\Chara\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Object\Character\Enemy\EnemyFactory.cpp">
+      <Filter>Game\Chara\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Object\Character\Enemy\EnemyJellyFish.cpp">
+      <Filter>Game\Chara\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Object\Character\Enemy\EnemyLurk.cpp">
+      <Filter>Game\Chara\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Object\Character\Enemy\EnemyManager.cpp">
+      <Filter>Game\Chara\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Object\Character\Enemy\EnemyMove.cpp">
+      <Filter>Game\Chara\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Object\Character\Enemy\EnemyReaper.cpp">
+      <Filter>Game\Chara\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Object\Character\Enemy\EnemyRebellion.cpp">
+      <Filter>Game\Chara\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Object\Character\Enemy\EnemyRippleFish.cpp">
+      <Filter>Game\Chara\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Object\Character\Player\Player.cpp">
+      <Filter>Game\Chara\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Object\Character\Player\PlayerSprite.cpp">
+      <Filter>Game\Chara\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Object\Character\SeaFireFly\AggressiveSeaFireFly.cpp">
+      <Filter>Game\Chara\SeaFirefly</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Object\Character\SeaFireFly\EscapeState.cpp">
+      <Filter>Game\Chara\SeaFirefly</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Object\Character\SeaFireFly\FollowPositionManager.cpp">
+      <Filter>Game\Chara\SeaFirefly</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Object\Character\SeaFireFly\FollowState.cpp">
+      <Filter>Game\Chara\SeaFirefly</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Object\Character\SeaFireFly\FreeState.cpp">
+      <Filter>Game\Chara\SeaFirefly</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Object\Character\SeaFireFly\NearMove.cpp">
+      <Filter>Game\Chara\SeaFirefly</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Object\Character\SeaFireFly\SeaFireFly.cpp">
+      <Filter>Game\Chara\SeaFirefly</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Object\Character\SeaFireFly\SeaFireFlyManager.cpp">
+      <Filter>Game\Chara\SeaFirefly</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Object\Character\SeaFireFly\SeaFireFlyMove.cpp">
+      <Filter>Game\Chara\SeaFirefly</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Object\Character\SeaFireFly\SnapState.cpp">
+      <Filter>Game\Chara\SeaFirefly</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Sound\RappingAudio.cpp">
+      <Filter>Game\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Object\Stage\StageSeaFly.cpp">
+      <Filter>Game\Stage\Obj\SeaFly</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Util\Collision\CollisionFuncManager.cpp">
+      <Filter>Game\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Util\Collision\CollisionListener.cpp">
+      <Filter>Game\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Scene\Direction\DirectionScene.cpp">
+      <Filter>Game\Scene\Direction</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Scene\Main\MainLayer.cpp">
+      <Filter>Game\Scene\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Scene\StageSelect\StageDataReader.cpp">
+      <Filter>Game\Scene\StageSelect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Scene\StageSelect\StageSelectScene.cpp">
+      <Filter>Game\Scene\StageSelect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Scene\Title\TitleScene.cpp">
+      <Filter>Game\Scene\Title</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Object\Stage\Alga.cpp">
+      <Filter>Game\Stage\Obj\Alga</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Object\Stage\BigStone.cpp">
+      <Filter>Game\Stage\Obj\Stone</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Object\Stage\SmallStone.cpp">
+      <Filter>Game\Stage\Obj\Stone</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Object\Stage\Stone.cpp">
+      <Filter>Game\Stage\Obj\Stone</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Object\Stage\Goal.cpp">
+      <Filter>Game\Stage\Obj\Goal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Util\DeterminedStage.cpp">
+      <Filter>Game\Stage\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AppDelegate.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Draw\Effect\Blend\AlphaBlend.cpp">
+      <Filter>Game\Draw\Alpha</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Draw\BackGround.cpp">
+      <Filter>Game\Draw\other</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Draw\Draw2D.cpp">
+      <Filter>Game\Draw\other</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Draw\Effect\Light\LightManager.cpp">
+      <Filter>Game\Draw\Effect\Light</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Draw\Effect\Light\BlendLight.cpp">
+      <Filter>Game\Draw\Effect\Light\BlendLight</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Draw\Effect\Light\SpotLight.cpp">
+      <Filter>Game\Draw\Effect\Light\SpotLight</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Draw\DarknessMask.cpp">
+      <Filter>Game\Draw\Effect\Mask</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Draw\Effect\Wave\Wave.cpp">
+      <Filter>Game\Draw\Wave</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Draw\Effect\Wave\WaveManager.cpp">
+      <Filter>Game\Draw\Wave</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Scene\StageSelect\StageManager.cpp">
+      <Filter>Game\Stage\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Scene\StageSelect\StageObjManager.cpp">
+      <Filter>Game\Stage\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Scene\Sub\IScene.cpp">
+      <Filter>Game\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Scene\Sub\PauseLayer.cpp">
+      <Filter>Game\Scene\Pause</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Sound\BGM\BaseBGM.cpp">
+      <Filter>Game\Sound\BGM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Sound\BGM\BGMManager.cpp">
+      <Filter>Game\Sound\BGM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Sound\SE\SEManager.cpp">
+      <Filter>Game\Sound\SE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Sound\SE\BaseSE.cpp">
+      <Filter>Game\Sound\SE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Util\FileIO\CSVReader.cpp">
+      <Filter>System\File\CSV</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Util\FileIO\PlistReader.cpp">
+      <Filter>System\File\Plist</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Util\FileIO\FileReader.cpp">
+      <Filter>System\File\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Util\FileIO\FileWriter.cpp">
+      <Filter>System\File\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Scene\StageSelect\StageCreater.cpp">
+      <Filter>Game\Stage\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Scene\StageSelect\StageFactory.cpp">
+      <Filter>Game\Stage\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Scene\Result\Support\ResultManager.cpp">
+      <Filter>Game\Scene\Result\Support</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Scene\Result\Layer\ResultLayer.cpp">
+      <Filter>Game\Scene\Result\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Scene\Result\Animation\ResultScoreAnimation.cpp">
+      <Filter>Game\Scene\Result\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Scene\Result\Animation\ResultStarAnimation.cpp">
+      <Filter>Game\Scene\Result\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Draw\Effect\Ripple\Base\Ripple.cpp">
+      <Filter>Game\Draw\Effect\Ripple\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Draw\Effect\Ripple\Base\RippleBody.cpp">
+      <Filter>Game\Draw\Effect\Ripple\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Draw\Effect\Ripple\Support\RippleCounter.cpp">
+      <Filter>Game\Draw\Effect\Ripple\Supprt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Draw\Effect\Ripple\Support\RippleFactory.cpp">
+      <Filter>Game\Draw\Effect\Ripple\Supprt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Draw\Effect\Ripple\Support\RippleManager.cpp">
+      <Filter>Game\Draw\Effect\Ripple\Supprt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Draw\Effect\Particle\SimpleParticle.cpp">
+      <Filter>Game\Draw\other</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Util\Scene\Fade.cpp">
+      <Filter>Game\Draw\Fade</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Scene\Main\Tutorial.cpp">
+      <Filter>Game\Scene\Tutorial</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Scene\Main\TutorialAnimation.cpp">
+      <Filter>Game\Scene\Tutorial</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Util\Animation\SpriteAnimation.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Object\Stage\Whirlpool.cpp">
+      <Filter>Game\Stage\Obj\Whirlpools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Scene\Main\MainState.cpp">
+      <Filter>Game\Scene\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Util\Sound\ADX2Converter.cpp">
+      <Filter>Game\Stage\Util\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Util\Sound\ADX2CueSheet.cpp">
+      <Filter>Game\Stage\Util\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Util\Sound\ADX2Manager.cpp">
+      <Filter>Game\Stage\Util\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Util\Sound\ADX2Player.cpp">
+      <Filter>Game\Stage\Util\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Util\Sound\ADX2Sound.cpp">
+      <Filter>Game\Stage\Util\Sound</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h" />
+    <ClInclude Include="..\Classes\System\Camera.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\System\memory.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\System\System.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\System\Timer.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Object\Character\Enemy\Enemy.h">
+      <Filter>Game\Chara\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Object\Character\Enemy\EnemyAttack.h">
+      <Filter>Game\Chara\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Object\Character\Enemy\EnemyEscape.h">
+      <Filter>Game\Chara\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Object\Character\Enemy\EnemyFactory.h">
+      <Filter>Game\Chara\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Object\Character\Enemy\EnemyJellyFish.h">
+      <Filter>Game\Chara\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Object\Character\Enemy\EnemyLurk.h">
+      <Filter>Game\Chara\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Object\Character\Enemy\EnemyManager.h">
+      <Filter>Game\Chara\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Object\Character\Enemy\EnemyMove.h">
+      <Filter>Game\Chara\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Object\Character\Enemy\EnemyReaper.h">
+      <Filter>Game\Chara\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Object\Character\Enemy\EnemyRebellion.h">
+      <Filter>Game\Chara\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Object\Character\Enemy\EnemyRemove.h">
+      <Filter>Game\Chara\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Object\Character\Enemy\EnemyRippleFish.h">
+      <Filter>Game\Chara\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Object\Character\Enemy\EnemyState.h">
+      <Filter>Game\Chara\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Object\Character\Enemy\IEnemyMove.h">
+      <Filter>Game\Chara\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Object\Character\Player\Player.h">
+      <Filter>Game\Chara\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Object\Character\Player\PlayerSprite.h">
+      <Filter>Game\Chara\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Object\Character\SeaFireFly\AggressiveSeaFireFly.h">
+      <Filter>Game\Chara\SeaFirefly</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Object\Character\SeaFireFly\EscapeState.h">
+      <Filter>Game\Chara\SeaFirefly</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Object\Character\SeaFireFly\FollowPositionManager.h">
+      <Filter>Game\Chara\SeaFirefly</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Object\Character\SeaFireFly\FollowState.h">
+      <Filter>Game\Chara\SeaFirefly</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Object\Character\SeaFireFly\FreeState.h">
+      <Filter>Game\Chara\SeaFirefly</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Object\Character\SeaFireFly\ISeaFireFlyMove.h">
+      <Filter>Game\Chara\SeaFirefly</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Object\Character\SeaFireFly\ISeaFireFlyState.h">
+      <Filter>Game\Chara\SeaFirefly</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Object\Character\SeaFireFly\NearMove.h">
+      <Filter>Game\Chara\SeaFirefly</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Object\Character\SeaFireFly\SeaFireFly.h">
+      <Filter>Game\Chara\SeaFirefly</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Object\Character\SeaFireFly\SeaFireFlyBase.h">
+      <Filter>Game\Chara\SeaFirefly</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Object\Character\SeaFireFly\SeaFireFlyManager.h">
+      <Filter>Game\Chara\SeaFirefly</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Object\Character\SeaFireFly\SeaFireFlyMove.h">
+      <Filter>Game\Chara\SeaFirefly</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Object\Character\SeaFireFly\SeaFireFlyRemove.h">
+      <Filter>Game\Chara\SeaFirefly</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Object\Character\SeaFireFly\SeaFireFlyRemoveAll.h">
+      <Filter>Game\Chara\SeaFirefly</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Object\Character\SeaFireFly\SeaFireFlyState.h">
+      <Filter>Game\Chara\SeaFirefly</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Object\Character\SeaFireFly\SnapState.h">
+      <Filter>Game\Chara\SeaFirefly</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Sound\RappingAudio.h">
+      <Filter>Game\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Object\Stage\StageSeaFly.h">
+      <Filter>Game\Stage\Obj\SeaFly</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Util\Collision\CollisionDelegate.h">
+      <Filter>Game\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Util\Collision\CollisionFuncManager.h">
+      <Filter>Game\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Util\Collision\CollisionListener.h">
+      <Filter>Game\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Util\Collision\ICollider.h">
+      <Filter>Game\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Util\Collision\ICollisionDelegate.h">
+      <Filter>Game\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Scene\Direction\DirectionScene.h">
+      <Filter>Game\Scene\Direction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Scene\Main\MainLayer.h">
+      <Filter>Game\Scene\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Scene\StageSelect\StageDataReader.h">
+      <Filter>Game\Scene\StageSelect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Scene\StageSelect\StageSelectScene.h">
+      <Filter>Game\Scene\StageSelect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Scene\Title\TitleScene.h">
+      <Filter>Game\Scene\Title</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Object\Stage\Alga.h">
+      <Filter>Game\Stage\Obj\Alga</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Object\Stage\BigStone.h">
+      <Filter>Game\Stage\Obj\Stone</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Object\Stage\SmallStone.h">
+      <Filter>Game\Stage\Obj\Stone</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Object\Stage\Stone.h">
+      <Filter>Game\Stage\Obj\Stone</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Object\Stage\Goal.h">
+      <Filter>Game\Stage\Obj\Goal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Object\Stage\ObjRemove.h">
+      <Filter>Game\Stage\Obj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Util\DeterminedStage.h">
+      <Filter>Game\Stage\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AppDelegate.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Draw\Effect\Blend\AlphaBlend.h">
+      <Filter>Game\Draw\Alpha</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Draw\BackGround.h">
+      <Filter>Game\Draw\other</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Draw\Draw2D.h">
+      <Filter>Game\Draw\other</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Draw\Effect\Light\LightManager.h">
+      <Filter>Game\Draw\Effect\Light</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Draw\Effect\Light\BlendLightState.h">
+      <Filter>Game\Draw\Effect\Light\BlendLight</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Draw\Effect\Light\BlendLight.h">
+      <Filter>Game\Draw\Effect\Light\BlendLight</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Draw\Effect\Light\SpotLight.h">
+      <Filter>Game\Draw\Effect\Light\SpotLight</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Draw\DarknessMask.h">
+      <Filter>Game\Draw\Effect\Mask</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Draw\Effect\Wave\WaveManager.h">
+      <Filter>Game\Draw\Wave</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Draw\Effect\Wave\Wave.h">
+      <Filter>Game\Draw\Wave</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\System\MyMath.h">
+      <Filter>Game\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Scene\StageSelect\StageManager.h">
+      <Filter>Game\Stage\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Scene\StageSelect\StageObjManager.h">
+      <Filter>Game\Stage\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Scene\Sub\IScene.h">
+      <Filter>Game\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Scene\Sub\PauseLayer.h">
+      <Filter>Game\Scene\Pause</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Sound\BGM\BaseBGM.h">
+      <Filter>Game\Sound\BGM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Sound\BGM\BGMManager.h">
+      <Filter>Game\Sound\BGM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Sound\BGM\BGMTag.h">
+      <Filter>Game\Sound\BGM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Sound\SE\SETag.h">
+      <Filter>Game\Sound\SE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Sound\SE\SEManager.h">
+      <Filter>Game\Sound\SE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Sound\SE\BaseSE.h">
+      <Filter>Game\Sound\SE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Util\FileIO\CSVReader.h">
+      <Filter>System\File\CSV</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Util\FileIO\PlistReader.h">
+      <Filter>System\File\Plist</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Util\FileIO\ReadData.h">
+      <Filter>System\File\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Util\FileIO\FileReader.h">
+      <Filter>System\File\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Util\FileIO\FileWriter.h">
+      <Filter>System\File\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Scene\StageSelect\StageCreater.h">
+      <Filter>Game\Stage\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Scene\StageSelect\StageFactory.h">
+      <Filter>Game\Stage\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Scene\Result\Support\ResultData.h">
+      <Filter>Game\Scene\Result\Support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Scene\Result\Support\ResultManager.h">
+      <Filter>Game\Scene\Result\Support</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Scene\Result\Layer\ResultLayer.h">
+      <Filter>Game\Scene\Result\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Scene\Result\Animation\IResultAnimation.h">
+      <Filter>Game\Scene\Result\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Scene\Result\Animation\ResultScoreAnimation.h">
+      <Filter>Game\Scene\Result\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Scene\Result\Animation\ResultStarAnimation.h">
+      <Filter>Game\Scene\Result\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Draw\Effect\Ripple\Base\Ripple.h">
+      <Filter>Game\Draw\Effect\Ripple\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Draw\Effect\Ripple\Base\RippleBody.h">
+      <Filter>Game\Draw\Effect\Ripple\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Draw\Effect\Ripple\Util\RippleRelease.h">
+      <Filter>Game\Draw\Effect\Ripple\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Draw\Effect\Ripple\Support\RippleCounter.h">
+      <Filter>Game\Draw\Effect\Ripple\Supprt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Draw\Effect\Ripple\Support\RippleFactory.h">
+      <Filter>Game\Draw\Effect\Ripple\Supprt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Draw\Effect\Ripple\Support\RippleManager.h">
+      <Filter>Game\Draw\Effect\Ripple\Supprt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Draw\Effect\Ripple\Support\RippleParameter.h">
+      <Filter>Game\Draw\Effect\Ripple\Supprt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Draw\Effect\Ripple\Support\RippleTag.h">
+      <Filter>Game\Draw\Effect\Ripple\Supprt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Draw\Effect\Particle\SimpleParticle.h">
+      <Filter>Game\Draw\other</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Util\Scene\Fade.h">
+      <Filter>Game\Draw\Fade</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Util\Creater\ManagerTemplate.h">
+      <Filter>Game\Stage\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Util\Release\DeleteContainer.h">
+      <Filter>Game\Stage\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Util\Release\DeleteInstance.h">
+      <Filter>Game\Stage\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Util\Release\ReleaseContainer.h">
+      <Filter>Game\Stage\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Util\Release\ReleaseInstance.h">
+      <Filter>Game\Stage\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Scene\Main\Tutorial.h">
+      <Filter>Game\Scene\Tutorial</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Scene\Main\TutorialAnimation.h">
+      <Filter>Game\Scene\Tutorial</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Util\Animation\SpriteAnimation.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Object\Stage\Whirlpool.h">
+      <Filter>Game\Stage\Obj\Whirlpools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Object\Stage\StageObj.h">
+      <Filter>Game\Stage\Obj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Scene\Main\MainState.h">
+      <Filter>Game\Scene\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Util\Sound\ADX2Converter.h">
+      <Filter>Game\Stage\Util\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Util\Sound\ADX2CueSheet.h">
+      <Filter>Game\Stage\Util\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Util\Sound\ADX2Manager.h">
+      <Filter>Game\Stage\Util\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Util\Sound\ADX2Player.h">
+      <Filter>Game\Stage\Util\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Util\Sound\ADX2PlayerTag.h">
+      <Filter>Game\Stage\Util\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Util\Sound\ADX2Sound.h">
+      <Filter>Game\Stage\Util\Sound</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="game.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Game">
+      <UniqueIdentifier>{b84105c4-3511-4659-ae32-25212f7364b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Scene">
+      <UniqueIdentifier>{e96d6291-3a45-48fd-9b6f-33a54a49af95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System">
+      <UniqueIdentifier>{df4f5b34-2d1d-4d8f-8362-59d1647851e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Chara">
+      <UniqueIdentifier>{6d6ec063-aaff-4c0c-a82f-a1e69ef7f705}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Chara\Enemy">
+      <UniqueIdentifier>{b7e6d2a0-cc06-4186-9189-ad77472cd827}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Chara\Player">
+      <UniqueIdentifier>{064507bd-e99d-4753-b77c-76c55b86b73a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Chara\SeaFirefly">
+      <UniqueIdentifier>{f5c88010-5e61-4228-b66d-f1a4787f3858}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Stage">
+      <UniqueIdentifier>{49674f1d-ee51-4cc1-98ac-1e9194b24377}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Stage\Obj">
+      <UniqueIdentifier>{867ee6fd-ca6c-41a2-bb92-ac7507670853}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Stage\Obj\Stone">
+      <UniqueIdentifier>{a89fe6d1-bc89-4cf2-8562-420cc3b56d74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Stage\Obj\Goal">
+      <UniqueIdentifier>{3f9437c3-12b1-475e-a57f-4e433c110b5c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Stage\Util">
+      <UniqueIdentifier>{a57fb7b3-2990-4bb1-ac81-b731bfcb6e20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Stage\Manager">
+      <UniqueIdentifier>{55ef6d5d-4e83-4480-b46b-ce90ca9c680d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Stage\Obj\SeaFly">
+      <UniqueIdentifier>{70d809c9-813e-42c3-837c-311370d9f3cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Scene\Main">
+      <UniqueIdentifier>{ecc98406-834c-4170-9fc9-f6beb3ad07ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Scene\Title">
+      <UniqueIdentifier>{94ddbbe4-8015-4fbd-bea6-e865223e50a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Scene\Test">
+      <UniqueIdentifier>{cbd59f90-69e3-483e-adef-9ca717c8fa22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Scene\Direction">
+      <UniqueIdentifier>{57b3bb91-b4f2-4f90-9ddd-bd77d3b4dba6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Sound">
+      <UniqueIdentifier>{bcadd614-eb40-4b2f-b62b-049cef686162}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Chara\SeaFirefly\State">
+      <UniqueIdentifier>{d1d3de34-1b57-4b2c-8898-9025d2064ecf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Chara\SeaFirefly\util">
+      <UniqueIdentifier>{67daef89-faf8-48b2-8874-840a7ffc6557}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Math">
+      <UniqueIdentifier>{cd40d9e5-d3de-4fce-ae45-bfc75ccf1f94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Scene\Result">
+      <UniqueIdentifier>{6909da84-e164-4b33-9edf-d93189b0fc16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Collision">
+      <UniqueIdentifier>{fcd0d279-7b23-4c0f-948e-e55ea9d3f66e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Draw">
+      <UniqueIdentifier>{d9cd2e98-b7d6-49cc-bd1c-7d2ef4064c05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Draw\Effect">
+      <UniqueIdentifier>{140dca2a-cea5-4a95-85e3-76aa03da5373}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Draw\Effect\Ripple">
+      <UniqueIdentifier>{82393621-d882-4fed-a112-b09036cde5e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Draw\Wave">
+      <UniqueIdentifier>{115a8bdc-6347-4bbd-9f5a-54e9208b913b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Draw\Fade">
+      <UniqueIdentifier>{988b46dc-1f92-4dd2-9502-a291df69b259}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Draw\other">
+      <UniqueIdentifier>{30c4bb6e-884d-44c0-aa4d-7e143d5520b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Stage\Obj\Alga">
+      <UniqueIdentifier>{72e505bf-7c96-4983-a70b-0892a0ae64fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Draw\Alpha">
+      <UniqueIdentifier>{88495fa5-1dd7-4bf8-959e-8fcbd7f29583}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Draw\Effect\Light">
+      <UniqueIdentifier>{e7d20be3-92f7-43e3-8015-3d4184c00a40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Draw\Effect\Light\BlendLight">
+      <UniqueIdentifier>{ff0e837d-90c6-4e60-86c5-966a720fde28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Draw\Effect\Light\SpotLight">
+      <UniqueIdentifier>{001342f2-9b84-4189-93d4-ab0d20df65bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Sound\BGM">
+      <UniqueIdentifier>{b8197edc-94d4-4205-846d-2fced9a91cd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Sound\SE">
+      <UniqueIdentifier>{fd44a34f-ff10-4e57-84e9-e07e11292444}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System\File">
+      <UniqueIdentifier>{9f6ff822-7abd-41c8-b64a-00777c38daee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System\File\CSV">
+      <UniqueIdentifier>{a019ac23-ccbe-4e55-955e-e3e1ef26a17b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System\File\Plist">
+      <UniqueIdentifier>{07d89527-473f-4f6f-9888-4611b57cdbe3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System\File\Util">
+      <UniqueIdentifier>{e9012759-b9ed-4a4b-8f82-cd8afdb5bdef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Scene\Result\Animation">
+      <UniqueIdentifier>{474f5259-ad1f-4ae3-9786-87ed0a40b498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Scene\Result\Layer">
+      <UniqueIdentifier>{a7b474c9-bcd1-49dc-be59-780522c4eb14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Scene\Result\Support">
+      <UniqueIdentifier>{04c91d46-2c88-47ed-925a-ae5df4dbaf76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Draw\Effect\Ripple\Base">
+      <UniqueIdentifier>{fd3c07b5-92b7-40e2-b230-181dd7cf296e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Draw\Effect\Ripple\Supprt">
+      <UniqueIdentifier>{0e82aafc-0aea-4c6b-8b80-418ac6bd8df6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Draw\Effect\Ripple\Util">
+      <UniqueIdentifier>{3c1a7fd7-9ae6-4eeb-93f5-0be40f386f9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Draw\Effect\Mask">
+      <UniqueIdentifier>{b405d5af-f5cd-47d7-b889-c779c7658bba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Scene\StageSelect">
+      <UniqueIdentifier>{6eb6ddcd-6221-4a8b-93b1-d2d83caefafe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Scene\Tutorial">
+      <UniqueIdentifier>{8519193f-7726-48e2-b916-e861731566e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Stage\Obj\Whirlpools">
+      <UniqueIdentifier>{1d21111a-b869-4d77-acba-57ef11dbbc61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Scene\Pause">
+      <UniqueIdentifier>{b7adf82e-bb2b-4e37-937d-020734db8c21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Stage\Util\Sound">
+      <UniqueIdentifier>{7e25e27a-cbca-4668-a999-955bfe375926}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,83 @@
+#include "cocos2d.h"
+#include "Wave.h"
+
+USING_NS_CC;
+
+class Wave::WaveImpl : public cocos2d::Grid3DAction {
+public:
+	WaveImpl::WaveImpl() :value(0){}
+
+	static WaveImpl* create(float duration, const Size& gridSize, unsigned int waves, float amplitude, bool horizontal, bool vertical){
+		Grid3DAction* impl = new WaveImpl();
+
+		impl->initWithDuration(duration, gridSize, waves, amplitude, horizontal, vertical);
+		impl->autorelease();
+
+		return impl;
+	}
+
+	bool initWithDuration(float duration, const Size& gridSize, unsigned int waves, float amplitude, bool horizontal, bool vertical){
+		if (Grid3DAction::initWithDuration(duration, gridSize)){
+			_waves = waves;
+			_amplitude = amplitude;
+			_amplitudeRate = 1.0f;
+			_horizontal = horizontal;
+			_vertical = vertical;
+
+			return true;
+		}
+		return false;
+	}
+
+	virtual WaveImpl* clone(void) const override{
+		auto a = new WaveImpl();
+		a->initWithDuration(_duration, _gridSize, _waves, _amplitude, _horizontal, _vertical);
+		a->autorelease();
+
+		return a;
+	}
+
+	virtual void update(float time) override{
+		int i, j;
+
+		for (i = 0; i < _gridSize.width + 1; ++i)
+		{
+			for (j = 0; j < _gridSize.height + 1; ++j)
+			{
+				Vec3 v = getOriginalVertex(Vec2(i, j));
+
+				if (_vertical)
+				{
+					v.x = (v.x + (sinf(time * (float)M_PI * _waves * 2 + v.y * .01f) * _amplitude * _amplitudeRate));
+				}
+
+				if (_horizontal)
+				{
+					v.y = (v.y + (sinf(time * (float)M_PI * _waves * 2 + v.x * .01f) * _amplitude * _amplitudeRate));
+				}
+
+				setVertex(Vec2(i, j), v);
+			}
+		}
+
+	}
+
+	inline float getAmplitude() const { return _amplitude; }
+	inline void setAmplitude(float amplitude) { _amplitude = amplitude; }
+
+	inline float getAmplitudeRate() const { return _amplitudeRate; }
+	inline void setAmplitudeRate(float amplitudeRate) { _amplitudeRate = amplitudeRate; }
+	
+
+protected:
+    unsigned int _waves;
+    float _amplitude;
+    float _amplitudeRate;
+    bool _vertical;
+    bool _horizontal;
+	
+
+private:
+	float value;
+
+};
