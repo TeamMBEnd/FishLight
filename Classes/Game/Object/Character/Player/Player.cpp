@@ -28,7 +28,7 @@ Player::Player() :state(normal), timer(0), rippleManager(nullptr), sprite(nullpt
 	LightManager::getInstance()->addDrawList(2.f, &sprite->getPosition(), 2.f, true);
 	LightManager::getInstance()->addDrawList(2.f, &sprite->getPosition(), 2.f, true);
 	LightManager::getInstance()->addDrawList(2.f, &sprite->getPosition(), 2.f, true);
-
+	//test
 }
 
 Player::~Player(){
