@@ -1,4 +1,4 @@
-#ifndef _APP_DELEGATE_H_
+﻿#ifndef _APP_DELEGATE_H_
 #define _APP_DELEGATE_H_
 
 #include "cocos2d.h"
@@ -7,6 +7,7 @@
 /**
 	@class	：	AppDelegate
 	@brief	：	アプリケーション統括者クラス
+test
  */
 class AppDelegate : private cocos2d::Application
 {
